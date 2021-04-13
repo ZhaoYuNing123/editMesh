@@ -1,0 +1,195 @@
+{
+    "version": "5",
+    "minVersion": "5",
+    "assets": [
+        "builtin/cube.mesh.bin",
+        "builtin/meshphysical.mat.json"
+    ],
+    "entities": [
+        {
+            "uuid": "87a0686d-32c8-4564-8678-22dec272c4c6",
+            "__class": "@egret/engine/GameEntity",
+            "components": [
+                {
+                    "uuid": "6e4d41f9-b8cc-4203-ab61-1de98ce3ace2"
+                },
+                {
+                    "uuid": "9c3001e6-1683-415f-a195-68320dbee0a9"
+                },
+                {
+                    "uuid": "16700dc4-cfb3-4332-8fe9-a4a5fac45689"
+                },
+                {
+                    "uuid": "9dd9800d-a992-4354-aa8b-edb482392c64"
+                }
+            ]
+        },
+        {
+            "uuid": "da8d251a-49c3-42b2-839d-9145afff62c3",
+            "__class": "@egret/engine/GameEntity",
+            "components": [
+                {
+                    "uuid": "ffbb4e9b-5dad-4eaf-be91-23a4e156d14e"
+                },
+                {
+                    "uuid": "b4935d33-bfa5-4358-bb11-7f31f07aa210"
+                },
+                {
+                    "uuid": "9cae873a-9352-45cf-a07b-214e73c27024"
+                }
+            ]
+        },
+        {
+            "uuid": "3da9d327-d182-4f6d-8db4-bb1860cb9784",
+            "__class": "@egret/engine/GameEntity",
+            "components": [
+                {
+                    "uuid": "f4412b19-8cd1-4d58-91ad-c5c636657c67"
+                },
+                {
+                    "uuid": "b4fa2529-8147-4067-b30f-ef6e9f3c8372"
+                },
+                {
+                    "uuid": "59e69917-addf-49f5-93f0-8268cf1ca26e"
+                }
+            ]
+        },
+        {
+            "uuid": "68063a6d-d235-4ab5-ba83-93b98f62969e",
+            "__class": "@egret/engine/GameEntity",
+            "components": [
+                {
+                    "uuid": "0a6a246e-a26f-4287-a2ab-372ee6e99f8a"
+                },
+                {
+                    "uuid": "61fe2125-f73b-46a6-8bb9-ff85058d62d1"
+                },
+                {
+                    "uuid": "f38275bb-9e98-41a9-845a-44677b7a3c0d"
+                },
+                {
+                    "uuid": "0713deb4-fc87-41c8-b50e-e47ededf9836"
+                },
+                {
+                    "uuid": "886f720d-cbf8-4499-9df5-d22be46c0472"
+                }
+            ]
+        }
+    ],
+    "components": [
+        {
+            "uuid": "6e4d41f9-b8cc-4203-ab61-1de98ce3ace2",
+            "__class": "@egret/engine/TreeNode",
+            "name": "Root",
+            "children": [
+                {
+                    "uuid": "ffbb4e9b-5dad-4eaf-be91-23a4e156d14e"
+                },
+                {
+                    "uuid": "f4412b19-8cd1-4d58-91ad-c5c636657c67"
+                },
+                {
+                    "uuid": "0a6a246e-a26f-4287-a2ab-372ee6e99f8a"
+                }
+            ]
+        },
+        {
+            "uuid": "ffbb4e9b-5dad-4eaf-be91-23a4e156d14e",
+            "__class": "@egret/engine/TreeNode",
+            "name": "Main Camera",
+            "tag": "MainCamera"
+        },
+        {
+            "uuid": "b4935d33-bfa5-4358-bb11-7f31f07aa210",
+            "__class": "@egret/engine/Transform",
+            "localPosition": [
+                0,
+                0,
+                -28.217
+            ]
+        },
+        {
+            "uuid": "9cae873a-9352-45cf-a07b-214e73c27024",
+            "__class": "@egret/render/Camera"
+        },
+        {
+            "uuid": "f4412b19-8cd1-4d58-91ad-c5c636657c67",
+            "__class": "@egret/engine/TreeNode",
+            "name": "Directional Light"
+        },
+        {
+            "uuid": "b4fa2529-8147-4067-b30f-ef6e9f3c8372",
+            "__class": "@egret/engine/Transform",
+            "localPosition": [
+                0,
+                3,
+                0
+            ],
+            "localRotation": [
+                0.4082179069519043,
+                -0.23456971347332,
+                0.10938165336847305,
+                0.8754261136054993
+            ]
+        },
+        {
+            "uuid": "59e69917-addf-49f5-93f0-8268cf1ca26e",
+            "__class": "@egret/render/DirectionalLight"
+        },
+        {
+            "uuid": "0a6a246e-a26f-4287-a2ab-372ee6e99f8a",
+            "__class": "@egret/engine/TreeNode",
+            "name": "Cube"
+        },
+        {
+            "uuid": "61fe2125-f73b-46a6-8bb9-ff85058d62d1",
+            "__class": "@egret/engine/Transform"
+        },
+        {
+            "uuid": "f38275bb-9e98-41a9-845a-44677b7a3c0d",
+            "__class": "@egret/render/MeshFilter",
+            "mesh": {
+                "__asset": 0
+            }
+        },
+        {
+            "uuid": "0713deb4-fc87-41c8-b50e-e47ededf9836",
+            "__class": "@egret/render/MeshRenderer",
+            "_localBoundingBox": [
+                -0.5,
+                -0.5,
+                -0.5,
+                0.5,
+                0.5,
+                0.5
+            ],
+            "materials": [
+                {
+                    "__asset": 1
+                }
+            ]
+        },
+        {
+            "uuid": "886f720d-cbf8-4499-9df5-d22be46c0472",
+            "__class": "EditCubeController"
+        },
+        {
+            "uuid": "9c3001e6-1683-415f-a195-68320dbee0a9",
+            "__class": "@egret/engine/Scene"
+        },
+        {
+            "uuid": "16700dc4-cfb3-4332-8fe9-a4a5fac45689",
+            "__class": "InputController"
+        },
+        {
+            "uuid": "9dd9800d-a992-4354-aa8b-edb482392c64",
+            "__class": "@egret/render/SceneLight",
+            "ambientColor": [
+                0.7607843137254902,
+                0.7607843137254902,
+                0.7607843137254902,
+                1
+            ]
+        }
+    ]
+}
